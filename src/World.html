@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Asg 3a</title>
+</head>
+
+<body onload="main()">
+
+    <canvas id="webgl" width="400" height="400">
+        Please use a browser that supports "canvas"
+    </canvas>
+
+    <p id="performance"></p>
+
+    <br><br>
+    <button type="button" id="clearButton">Reset Camera</button>
+
+    <br><br>
+    Arm Animations
+    <br>
+    <button type="button" id="animationAniOnButton">Animation On</button>
+    <button type="button" id="animationAniOffButton">Animation Off</button>
+    <br><br>
+    Joints:
+    <br>
+    ArmL1 <input type="range" min="-60" max="60" value="slider" id="armL1Slide">
+    <br>
+    ArmL2 <input type="range" min="-60" max="60" value="slider" id="armL2Slide">
+    <br>
+    ArmL3 <input type="range" min="-60" max="60" value="slider" id="armL3Slide">
+
+    <br><br>
+    Camera Controls
+    <br>
+    X: <input type="range" min="0" max="360" value="slider" id="ySlide">
+    Y: <input type="range" min="0" max="360" value="slider" id="xSlide">
+    Z: <input type="range" min="0" max="360" value="slider" id="zSlide">
+    <br>
+
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="../lib/cuon-matrix-cse160.js"></script>
+    <script src="Point.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Circle.js"></script>
+    <script src="Cube.js"></script>
+    <script src="Camera.js"></script>
+    <script src="World.js"></script>
+</body>
+
+</html>
